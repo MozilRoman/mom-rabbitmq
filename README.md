@@ -4,11 +4,13 @@
 
 To start run command:
 
-`docker run -d --hostname my-rabbit --name some-rabbit-1 -p 5672:5672 -p 15672:15672 rabbitmq:3-management`
+`docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management`
 
 Navigate to `http://localhost:15672/` to browse on UI.
 
-Stop RabbitMQ: `docker rm  some-rabbit-1`
+Stop RabbitMQ: `docker stop some-rabbit`
+
+Remove RabbitMQ container: `docker rm some-rabbit`
 
 ### Project Overview
 
